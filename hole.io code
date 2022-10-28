@@ -1,0 +1,52 @@
+<html><head><base target="_blank"><base target="_blank"><base target="_blank"><link rel="stylesheet" href="https://sites.google.com/site/v113ks4k/style.css">
+    <script id="gamedistribution-jssdk" src="//html5.api.gamedistribution.c0m/main.min.js"></script><script src="https://sites.google.com/site/v113ks4k/UnityProgress.js"></script>
+    <script src="https://sites.google.com/site/fdg5ewgawe4/holeUnityLoader.js"></script>
+
+    <script type="text/javascript">
+      var gameInstance;
+      window.onload = function () {
+        let  bttn = document.createElement( "button" );
+        bttn.appendChild(document.createTextNode( "PLAY NOW" ));
+        bttn.setAttribute('id', 'run_game');
+        bttn.style.display = 'none';
+        bttn.style.position = 'absolute';
+        document.body.appendChild(bttn);
+        bttn.style.display = 'block';
+        bttn.style.left = ((document.body.clientWidth - bttn.offsetWidth)/2) + 'px';
+        bttn.style.top = ((document.body.clientHeight - bttn.offsetHeight)/2) + 'px';
+        bttn.onclick = function () {
+          gameInstance = UnityLoader.instantiate("gameContainer", "https://images-docs-opensocial.googleusercontent.com/gadgets/proxy?container=fbk&url=https://sites.google.com/site/fdg5ewgawe4/Hole.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+          this.remove();
+        }
+      }
+    </script>
+    </head><body><div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas id="#canvas" width="688" height="370" style="cursor: default;"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
+    </div>
+<style>
+button {
+  min-width: 100%;
+  font-family: fantasy;
+  appearance: none;
+  border: 1;
+  border-radius: 19px;
+  background: #27114c;
+  color: #fff;
+  padding: 18px 46px;
+  font-size: 42px;
+  cursor: pointer;
+}
+button:hover {
+  background: #411b73;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0px #cbd6ee;
+} 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+</style><script src="blob:https://563558959-jotspot-embeds.googleusercontent.com/a4bb18ef-4ce7-4e48-a3dd-df6dd2175add"></script><script src="blob:https://563558959-jotspot-embeds.googleusercontent.com/184d7ac9-a6bc-4119-848c-edca026765f8"></script><script src="blob:https://1865694319-atari-embeds.googleusercontent.com/115827d3-65ad-45e7-bc4c-7a13ab76ed36"></script><script src="blob:https://1865694319-atari-embeds.googleusercontent.com/0fda8d77-8ef6-4110-bf85-07178475f504"></script></body></html>
